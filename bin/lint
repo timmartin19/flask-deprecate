@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+pylint --rcfile .pylintrc -j 4 flask_deprecate
