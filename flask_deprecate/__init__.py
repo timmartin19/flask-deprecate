@@ -12,4 +12,4 @@ from flask_deprecate.flask_deprecate import deprecate_blueprint, deprecate_route
 __all__ = ['deprecate_blueprint', 'deprecate_route']
 __author__ = 'Tim Martin'
 __email__ = 'oss@timmartin.me'
-__version__ = '0.1.0'
+__version__ = '0.1.1'

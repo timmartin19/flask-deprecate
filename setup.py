@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='flask-deprecate',
-    version='0.1.0',
+    version='0.1.1',
     description="Easy decorators for deprecating flask views and blueprints",
     long_description=readme + '\n\n' + history,
     author="Tim Martin",
