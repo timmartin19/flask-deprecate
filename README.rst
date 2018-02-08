@@ -13,10 +13,6 @@ Flask-Deprecate
         :target: https://flask-deprecate.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/timmartin19/flask_deprecate/shield.svg
-     :target: https://pyup.io/repos/github/timmartin19/flask_deprecate/
-     :alt: Updates
-
 
 Easy decorators for deprecating flask views and blueprints
 
