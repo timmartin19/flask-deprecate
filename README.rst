@@ -25,6 +25,52 @@ Easy decorators for deprecating flask views and blueprints
 * Documentation: https://flask-deprecate.readthedocs.io.
 
 
+Example
+-------
+
+.. code-block:: python
+
+    from flask import Flask, Response
+
+    from flask_deprecate import deprecate_view
+
+    app = Flask('myapp')
+
+    @app.route('/myroute')
+    @deprecate_view("Don't use this!")
+    def myroute():
+        return Response()
+
+An HTTP compliant "Warning" header is injected indicating the route is
+deprecated and optionally providing an upgrade path.
+
+
+You can also deprecate an entire blueprint in favor of a new one
+
+.. code-block:: python
+
+    from flask import Flask, Response, Blueprint
+
+    from flask_deprecate import deprecate_blueprint
+
+    old_bp = Blueprint('old', 'old', url_prefix='/v1')
+    new_bp = Blueprint('new', 'new', url_prefix='/v2')
+
+    @old_bp.route('/my_route')
+    def my_old_route():
+        return Resonse()
+
+    @new_bp.route('/my_new_route')
+    def my_new_route():
+        return Response()
+
+    deprecate_blueprint(old_bp, new_blueprint=new_bp)
+    app.register_blueprint(old_bp)
+    app.register_blueprint(new_bp)
+
+This will inject the Warning header for every route on the old blueprint
+and additionally direct the client to use the new `/v2` api.
+
 Documentation
 -------------
 
@@ -51,11 +97,6 @@ Assuming you have virtualenv wrapper installed
     workon flask-deprecate
     pip install -r requirements_dev.txt
     pip install -e .
-
-Features
---------
-
-* TODO
 
 Credits
 ---------

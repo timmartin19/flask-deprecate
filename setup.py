@@ -10,12 +10,13 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
+    'flask'
 ]
 
 test_requirements = [
-    'pylint'
-    # TODO: put package test requirements here
+    'pylint',
+    'mock',
+    'webtest'
 ]
 
 setup(
