@@ -20,6 +20,10 @@ Easy decorators for deprecating flask views and blueprints
 * Free software: MIT license
 * Documentation: https://flask-deprecate.readthedocs.io.
 
+.. code-block:: bash
+    
+    pip install flask-deprecate
+
 
 Example
 -------
