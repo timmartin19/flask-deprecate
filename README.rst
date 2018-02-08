@@ -4,10 +4,10 @@ Flask-Deprecate
 
 
 .. image:: https://img.shields.io/pypi/v/flask_deprecate.svg
-        :target: https://pypi.python.org/pypi/flask_deprecate
+        :target: https://pypi.python.org/pypi/flask-deprecate
 
 .. image:: https://img.shields.io/travis/timmartin19/flask_deprecate.svg
-        :target: https://travis-ci.org/timmartin19/flask_deprecate
+        :target: https://travis-ci.org/timmartin19/flask-deprecate
 
 .. image:: https://readthedocs.org/projects/flask-deprecate/badge/?version=latest
         :target: https://flask-deprecate.readthedocs.io/en/latest/?badge=latest
