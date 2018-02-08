@@ -16,3 +16,4 @@ deploy:
   on:
     tags: true
     repo: timmartin19/flask-deprecate
+    python: 3.6
