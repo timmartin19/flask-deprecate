@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Flask-Deprecate's documentation!
-======================================
+===========================================
 
 Contents:
 
@@ -15,6 +15,7 @@ Contents:
    usage
    contributing
    history
+   flask_deprecate
 
 .. include:: ../README.rst
 
